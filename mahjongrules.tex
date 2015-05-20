@@ -1,5 +1,9 @@
 \documentclass{article}
 
+% This type of document will contain a lot of lists and short sentences, so we want no indented paragraphs and tight lists
+\usepackage{parskip}
+\usepackage{mdwlist}
+
 \begin{document}
 \title{Rules of Mahjong}
 \author{Eetplan}
@@ -23,11 +27,11 @@ A player completes a hand if it's her turn and she has four sets and a pair.
 A pair is two of the same stone
 
 A set is:
-\begin{enumerate}
+\begin{enumerate*}
     \item A Pung, three of the same stone,
     \item A Kong, four of the same stone, or
     \item A Chow, a run of three stones in the same suit.
-\end{enumerate}
+\end{enumerate*}
 
 \section{Playing a round}
 At the start of each round the stones are shuffled and arranged into a wall. Each player takes 13 random stones from the wall. 12 stones are kept seperate from the wall as the "kong stack".
@@ -35,9 +39,9 @@ At the start of each round the stones are shuffled and arranged into a wall. Eac
 The host starts his turn by taking a new stone.
 
 A turn works as follows:
-\begin{enumerate}
+\begin{enumerate*}
     \item A player starts the turn by one of the following options. If multiple people can start the turn, priority goes to the highest item on the list. If multiple people can complete their hand, priority goes to the person who is closest in counterclockwise direction.
-    \begin{enumerate}
+    \begin{enumerate*}
         \item A player is the host during the first turn.
         \item A player completes their hand using the stone that was just discarded.
         \item A player makes a pung using the stone that was just discarded. Any player that can make a pung using that stone can do this.
@@ -49,13 +53,13 @@ A turn works as follows:
 
         Now she takes a stone from the Kong stack to replace the fourth stone she used for that set.
         \item A player takes a new stone from the wall. You can only do this if you are on the right of the last person to have a turn.
-    \end{enumerate}
+    \end{enumerate*}
     \item If a player has a pung hidden in their hand she can declare it and seperate the four stones, face down, from the rest of her hand. She takes a new stone from the pung stack.
     \item If a player has a hidden stone in their hand that matches a revealed kong she has, she can turn the kong into a pung using that stone. She takes a new stone from the pung stack.
     \item The player ends the turn:
    a. If the player has completed her hand, she says this. She does not reveal her hand until the end of the round.
    b. Otherwise, she discards a stone from her hand.
-\end{enumerate}
+\end{enumerate*}
 
 A round ends when all players have completed their hand, or the wall has no more stones left.
 
