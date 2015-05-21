@@ -5,14 +5,16 @@
 \usepackage{mdwlist}
 
 \begin{document}
-\title{Rules of Mahjong}
-\author{Eetplan}
+% I tried to add Chinese, but I failed miserably
+\title{Eetplan Rules of Mahjong}
+\author{Bart}
 \maketitle
 
 \section{General Considerations}
 This document is meant to describe the way we play mahjong at eetplan. The goal of the game is to make either money or "money". The real goal of the game is to learn chinese.
 
-Rules may be exchanged for logically equivalent ones if customary. For instance, the whole procedure with the wall is just an interesting way to draw tiles.
+Rules may be exchanged for logically equivalent ones if customary. For instance, normally the first player will take his first stone while taking his 13 stones. Taking 14 stones like this is logically the same as taking 13 and then 1, so this is fine. I've decided not to describe the complete wall procedure, as it's not required for the game.
+% TODO: describe the procedure.
 
 Here we describe Mahjong as played by four players. If a different number is wanted, they will have to agree on the rules.
 
@@ -22,16 +24,22 @@ To begin the game, give all players the same amount of points and choose a first
 
 % TODO: describe what equipment we use
 \section{Definitions}
-A player completes a hand if it's her turn and she has four sets and a pair.
+\emph{The wall} is the set of all stones that would normally be drawn from, normally arranged in a pleasing manner.
 
-A pair is two of the same stone
+The \emph{Kong Stack} is 12 stones kept seperate from the rest of the wall. It's used to top up a players hand when they get a Kong.
 
-A set is:
+Two stones are \emph{equivalent} if the faces contain the same information. So if either of the stones are from a suit, they need to have both the same suit and the same number on them.
+
+A \emph{pair} is two equivalent stones.
+
+A \emph{set} is any one of:
 \begin{enumerate*}
-    \item A Pung, three of the same stone,
-    \item A Kong, four of the same stone, or
-    \item A Chow, a run of three stones in the same suit.
+    \item A \emph{Pung}, three of the same stone,
+    \item A \emph{Kong}, four of the same stone, or
+    \item A \emph{Chow}, a run of three stones in the same suit.
 \end{enumerate*}
+
+A player \emph{completes a hand} if it's her turn and she has four sets and a pair.
 
 \section{Playing a round}
 At the start of each round the stones are shuffled and arranged into a wall. Each player takes 13 random stones from the wall. 12 stones are kept seperate from the wall as the "kong stack".
@@ -65,6 +73,8 @@ A round ends when all players have completed their hand, or the wall has no more
 
 \subsection{Scoring a round}
 Points are exchanged according to the following rules:
-
-If player A completed her hand before player B, then player A never has to give points to player B
+\begin{itemize*}
+    \item If player A completed her hand before player B, then player A never has to give points to player B
+    \item If a player gives or receives points and she is host, she receives double points.
+\end{itemize*}
 \end{document}
