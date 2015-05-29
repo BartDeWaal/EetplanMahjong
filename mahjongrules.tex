@@ -37,10 +37,12 @@ A \emph{set} is any one of:
     \item A \emph{Chow}, a run of three tiles in the same suit. A run means three tiles, one with the smallest value, one with the smallest value $+1$, one with the smallest value $+2$. Runs don't ``loop around''; 8, 9, 1 is not a run.
 \end{enumerate*}
 
+A Kong can be either \emph{hidden} or \emph{open}, depending on how it was played. A hidden Kong is face down, an open Kong isn't.
+
 A player \emph{completes a hand} if it's her turn and she has four sets and a pair.
 
 \section{Playing a round}
-At the start of each round the tiles are shuffled and arranged into the Wall. Each player takes 13 tiles from the Wall, except the host who takes 14. 12 tiles are kept seperate from the Wall as the ``kong stack''.
+At the start of each round the tiles are shuffled and arranged into the Wall. Each player takes 13 tiles from the Wall, except the host, who takes 14. 12 tiles are kept seperate from the Wall as the ``Kong stack''.
 
 The host starts his turn by taking a new tile.
 
@@ -50,18 +52,23 @@ A turn works as follows:
     \begin{enumerate*}
         \item The host starts the first turn. She may complete her hand if she can.
         \item A player completes their hand using the tile that was just discarded.
-        \item A player makes a pung using the tile that was just discarded. Any player that can make a pung using that tile can do this.
+        \item A player makes a Pung using the tile that was just discarded. Any player that can make a Pung using that tile can do this.
 
-        First, she shouts ``Pung''. She takes the tiles, and puts it open in front of her hand. Then she takes two duplicate tiles from her hand and adds them, open, next to the tile she just took.
-        \item A player makes a Kong using the tile that was just discarded. Any player that can make a kong using that tile and three hidden tiles in her hand can do this.
+        First, she shouts ``Pung''. She takes the tile, and puts it open in front of her hand. Then she takes two duplicate tiles from her hand and adds them, open, next to the tile she just took.
+        \item A player makes an open Kong using the tile that was just discarded. Any player that can make a Kong using that tile and three hidden tiles in her hand can do this.
 
-        First, she shouts ``Kong''. She takes the tiles, and puts it open in front of her hand. Then she takes three duplicate tiles that were hidden in her hand and adds them, open, next to the tile she just took.
+        First, she shouts ``Kong''. She takes the tile, and puts it open in front of her hand. Then she takes three duplicate tiles that were hidden in her hand and adds them, open, next to the tile she just took.
+        She get a point from the player that discarded the tile. This point doesn't get doubled.
 
         Now she takes a tile from the Kong Stack and adds it to her hand to replace the fourth tile she used for that set.
         \item The player to the right of the last player takes a new tile from the Wall. She can complete her hand this way.
     \end{enumerate*}
-    \item If a player has a pung hidden in their hand she can declare it and seperate the four tiles, face down, from the rest of her hand. She takes a new tile from the pung stack.
-    \item If a player has a hidden tile in their hand that matches a revealed kong she has, she can turn the kong into a pung using that tile. She takes a new tile from the pung stack.
+    \item If a player has a Kong hidden in their hand she can declare it and place the four tiles, face down, in front of the rest of her hand.
+    Everyone who hasn't completed their hand gives her two points (these points don't get doubled).
+    She takes a new tile from the Kong stack.
+    \item If a player has a hidden tile in their hand that matches a revealed Kong she has, she can turn the Kong into a Pung using that tile.
+    Everyone who hasn't completed their hand gives her a point (this point doesn't get doubled).
+    She takes a new tile from the Kong stack.
     \item The player ends the turn:
         \begin{enumerate*}
             \item If the player has completed her hand, she says this. She does not reveal her hand until the end of the round.
@@ -76,8 +83,8 @@ Points are exchanged according to the following rules:
 \begin{itemize*}
     \item If player A completed her hand before player B, then player A never has to give points to player B.
     \item If a player gives or receives points and she is host, she receives or gives double points.
+    \item Every Kong a player has doubles the points she gets.
         % Bonus for winning from tile vs. from discard
-        % Bonus for Kong
         % Points for "Didn't complete hand, but was closer"
 
         % Suggestions from a book:
