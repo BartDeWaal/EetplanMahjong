@@ -34,9 +34,8 @@ We play with a standard mahjong set, containing for duplicates of each of these 
 
 In adition, we need counters for points, a good table, and a pair of dice.
 
-% TODO: Describe the Wall
 \section{Definitions}
-\emph{The Wall} is the set of all tiles that would normally be drawn from, normally arranged in a pleasing manner.
+\emph{The Wall} is the set of all tiles that would normally be drawn from, normally arranged in a pleasing manner as described below.
 
 The \emph{Kong Stack} is 12 tiles kept seperate from the rest of the Wall. It's used to top up a player's hand when they get a Kong.
 
@@ -56,15 +55,24 @@ A player \emph{completes a hand} if it's her turn and she has four sets and a pa
 A player is \emph{fishing} if she only needs one tile to complete her hand. Even if it isn't actually possible for her to draw a tile that would complete her hand (because all duplicates of that tile have been discarded, for example) she is still fishing.
 
 \section{Playing a round}
-At the start of each round the tiles are shuffled and arranged into the Wall. Each player takes 13 tiles from the Wall, except the host, who takes 14. 12 tiles are kept seperate from the Wall as the ``Kong stack''.
+\subsection{The Wall}
+After the tiles are turned face down and shuffled, each player makes a wall that is (about) 17 wide and (exactly) 2 high. These four walls are pushed together to form the Wall.
 
-The host starts his turn by taking a new tile.
+The host rolls the dice. She now goes through the sides of the Wall in turn, counterclockwise and starting at the section in front of her, until she reaches the sum of the die.
 
+Now the Wall is broken between the $n$th and $n+1$th most counterclockwise pairs of tiles in that side of the wall. Here, $n$ is the smallest number of pips shown on the die.
+The 12 stones to the counterclockwise of this break become the Kong Stack.
+
+Each player, starting with the host and continuing in counterclockwise direction, takes four stones from the clockwise side of the break, and again, and once more. Now the host takes a tile, and takes the fourth tile, leaving the other three for the other players to take one by one.
+
+The host should have 14 stones and all the other players 13. A turn starts.
+
+\subsection{Turns}
 A turn works as follows:
 \begin{enumerate*}
     \item A player starts the turn by one of the following options. If multiple people can start the turn, priority goes to the highest item on the list. If multiple people can complete their hand, priority goes to the person who is closest in counterclockwise direction.
     \begin{enumerate*}
-        \item The host starts the first turn. She may complete her hand if she can.
+        \item The host starts the first turn (without drawing a tile, as she already has one extra). She may complete her hand if she can.
         \item A player completes their hand using the tile that was just discarded.
         \item A player makes a Pung using the tile that was just discarded. Any player that can make a Pung using that tile can do this.
 
