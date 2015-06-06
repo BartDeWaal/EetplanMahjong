@@ -12,4 +12,4 @@ clean : cleanup
 	-rm $(FILENAME).pdf
 
 $(FILENAME).pdf : $(FILENAME).tex
-	xelatex $(FILENAME).tex
+	pdflatex $(FILENAME).tex
